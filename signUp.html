@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/signUp.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="./images/slider11.jpg" alt="" /></div>
+        <div class="formBx">
+          <form name="myform" class="d-flex flex-column w-100" method="post" action="abc.jsp" onsubmit="return validateform()">
+            <h2>Sign In</h2>
+            <input id="nameInLogIn"  type="text" name="" placeholder="Username" />
+            <span class="err p-0" id="nameInLogInErr" for=""></span>
+            <input class="mb-4" id="logInPass" type="password" name="password" placeholder="Password" />
+            <span class="err" id="passInLogInErr"></span>
+
+            <input class="mt-3" id="submitLogIn" type="submit" name="" value="Login" />
+            <p class="signup">
+              Don't have an account ?
+              <a id="sign"  >Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form action="" onsubmit="return false;">
+            <h2>Create an account</h2>
+            <input id="nameInSignUp" type="text" placeholder="Username" name="name"/>
+            <span class="err" id="nameInSignUpErr" for=""></span>
+            <input id="emailOfSignUp" type="email" name="email" placeholder="Email Address" />
+            <span class="err" id="emailInSignUpErr"  for=""></span>
+            <input  id="password" type="password" name="password" placeholder="Create Password" />
+            <span class="err" id="pass1InSignUpErr"  for=""></span>
+            <input id="password2"  type="password" name="password" placeholder="Confirm Password" />
+            <span class="err" id="pass2InSignUpErr"  for=""></span>
+            <input id="submitSignUp" type="submit" name="" value="submit"/>
+            <p class="signup">
+              Already have an account ?
+              <a id="sign"  >Sign in.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="./images/slider3.jpg" alt="" /></div>
+      </div>
+    </div>
+  </section>
+    <script type="module" src="./js/mainOfSignUp.js"></script>
+  </body>
+</html>

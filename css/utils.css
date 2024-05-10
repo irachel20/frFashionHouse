@@ -1,0 +1,60 @@
+.h-100vh {
+  height: 100vh;
+}
+
+.select {
+  width: 1rem;
+}
+
+.text-shadow-white {
+  text-shadow: 1px 1px white;
+}
+
+.text-shadow-black {
+  text-shadow: 1px 1px black;
+}
+
+.bg-orange {
+  background-color: #ffa600e2;
+}
+
+.about-btn:hover,
+.contact-btn:hover {
+  color: #ffa500;
+  transition: all 0.2s;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.text-black {
+  color: #212529;
+}
+
+.bg-gray {
+  background-color: #f7f8fa;
+}
+
+.text-orange {
+  color: #ffa500;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.mt-8 {
+  margin-top: 10rem;
+  margin-bottom: 5.5rem;
+}
+
+.w-3 {
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.err{
+  font-size: 1rem;
+  color: #dc3545;
+}

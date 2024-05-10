@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@900&display=swap");
+
+body {
+  font-family: "Carrois Gothic SC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}

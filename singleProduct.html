@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./css/singleProduct.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <img src="./images/mylogo.svg" width="60rem" height="60rem" alt="" />
+        <p class="mt-3 mb-3 me-auto">Fashion House</p>
+        <button
+          class="navbar-toggler border-0 dropdown"
+          id="navBar"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <div class="dropdown-content">
+              <a href="#">Search</a>
+              <a href="#">Contact Us</a>
+              <a href="#">About Us</a>
+              <a href="#">Cart</a>
+              <a href="#">Your Account</a>
+            </div>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav fs-5 ms-auto d-flex align-items-center justify-content-end gap-5"
+          >
+            <li class="nav-item active">
+              <a
+                class="bg-transparent text-decoration-none border-0 about-btn text-black"
+                href="#"
+              >
+                Discovery
+              </a>
+            </li>
+            <li class="nav-item text-black">
+              <a
+                class="bg-transparent text-decoration-none border-0 about-btn text-black"
+                id="aboutUsInHeader"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+            <li class="nav-item text-black">
+              <a
+                class="bg-transparent text-decoration-none border-0 me-5 pe-5 contact-btn text-black"
+                id="contactInHeader"
+                href="#"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul
+            class="navbar-nav ms-5 ps-5 ms-auto d-flex gap-4 align-items-center"
+          >
+            <a href="#">
+              <img
+                class=""
+                src="./images/Desktop/nav/Cart.png"
+                width="25px"
+                height="25px"
+                alt=""
+              />
+            </a>
+
+            <a href="#">
+              <img
+                class=" "
+                src="./images/Desktop/nav/Profile.png"
+                width="25x"
+                height="25px"
+                alt=""
+              />
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="app" class="product-content py-5 mt-8">
+        <div class="left">
+          <div class="thumbnails" style="overflow: hidden">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+                <img src="./images/slide4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="content">
+            <div class="tt">
+              <div class="category">T-Shirt</div>
+              <div class="title">Turuncu 2552</div>
+            </div>
+            <div class="descrp">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type and scrambled it to make
+            </div>
+            <div class="options">
+              <div class="selecter p-2">
+                <select class="selected">
+                  <option>Body size XL</option>
+                  <option>Body size L</option>
+                  <option>Body size M</option>
+                  <option>Body size S</option>
+                </select>
+              </div>
+              <counter-btn>
+                <div class="count">
+                  <button
+                    id="minusBtn"
+                    @click="count--"
+                    class="btn-count"
+                    :class="{'disabled' : count <= 0}"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="#000"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="{2}"
+                        d="M18 12H6"
+                      />
+                    </svg>
+                  </button>
+                  <input
+                    value="0"
+                    id="productNumber"
+                    class="p-1 w-3 text-align-center border-0 ps-1"
+                  />
+                  <button
+                    id="plusBtn"
+                    @click="count++"
+                    class="btn-count"
+                    :class="{'disabled' : count >= 99}"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#000"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="{2}"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </counter-btn>
+            </div>
+            <div class="actions">
+              <button class="buy w-100 fs-3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <button class="border-0 bg-transparent text-white">
+              <h6>Be Our Future Model</h6>
+            </button>
+            <p class="text-justify">
+              Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
+              help the upcoming programmers with the code. Scanfcode focuses on
+              providing the most efficient code or snippets as the code wants to
+              be simple. We will help programmers build up concepts in different
+              programming languages that include C, C++, Java, HTML, CSS,
+              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <button
+              id="contactInFooter"
+              class="border-0 bg-transparent text-white ms-lg-5"
+            >
+              <h6 id="contactTitleInFooter" class="text-start">
+                Contact And Links
+              </h6>
+            </button>
+            <ul id="footerLinks" class="footer-links ms-lg-5">
+              <li>
+                <a class="text-decoration-none" href="#">@FRfashionhouse</a>
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >https://www.facebook.com/FRfashionhouse</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#"
+                  >FRfashionhouse@gmail.com</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2017 All Rights Reserved by
+              <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/mainOfSingleProduct.js"></script>
+  </body>
+</html>
